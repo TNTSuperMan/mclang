@@ -1,0 +1,22 @@
+{
+  "name": "mclang",
+  "description": "Generate minecraft command.",
+  "version": "0.0.0",
+
+  "module": "dist/esm.js",
+  "main": "dist/cjs.js",
+  "types": "dist/index.d.ts",
+
+  "devDependencies": {
+    "@types/bun": "^1.1.16",
+    "@types/node": "^22.10.5",
+    "bun": "^1.1.43"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && bun run build.ts"
+  }
+}
